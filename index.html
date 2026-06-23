@@ -121,7 +121,7 @@ footer{border-top:1px solid var(--line);padding:46px 0 32px;text-align:center;co
 <div id="prog"></div>
 <nav class="nav" id="nav"><div class="wrap">
   <a href="#home" class="brand en"><span class="mk">YAM</span>يام</a>
-  <div class="menu" id="menu">
+  <div class="menu" id="navmenu">
     <a href="#about">عن المكان</a><a href="#menu">المنيو</a><a href="#gallery">أجواؤنا</a><a href="#visit">زورونا</a>
     <a href="https://www.google.com/maps/search/يام+الخبر" target="_blank" rel="noopener" class="nbtn">الموقع</a>
   </div>
@@ -131,7 +131,7 @@ footer{border-top:1px solid var(--line);padding:46px 0 32px;text-align:center;co
   <div class="bg"><img src="y6.jpg" alt="يام"></div>
   <div class="wrap">
     <span class="ey">الخبر · قهوة مختصة</span>
-    <h1>قهوةٌ تُحضَّر <span class="ac">بشغف</span></h1>
+    <h1>نكهةٌ <span class="ac">تبقى معك</span></h1>
     <p class="sub">يام · Yam Coffee في الخبر. حبوب مختارة، تحضير بعناية، وأجواء تستحق أن تكون جزءاً من يومك.</p>
     <div class="hcta">
       <a href="https://www.google.com/maps/search/يام+الخبر" target="_blank" rel="noopener" class="btn btn-p">زورونا الآن</a>
@@ -199,7 +199,7 @@ footer{border-top:1px solid var(--line);padding:46px 0 32px;text-align:center;co
   var cssT=window.CSS&&CSS.supports&&CSS.supports('animation-timeline: scroll()');
   function sc(){if(scrollY>40)nav.classList.add('scz');else nav.classList.remove('scz');if(!cssT&&prog){var d=document.documentElement,h=d.scrollHeight-d.clientHeight;prog.style.transform='scaleX('+(h>0?Math.min(d.scrollTop/h,1):0)+')';}}
   addEventListener('scroll',sc,{passive:true});sc();
-  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  var b=document.getElementById('burger'),m=document.getElementById('navmenu');
   if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');});});}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -7% 0px'});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
